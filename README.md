@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Weather Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a weather application developed using React, which retrieves data from the OpenWeatherMap API to present current weather information for specified locations. Users can easily search for cities, view current temperature, weather conditions, and other relevant details. They also have the flexibility to add and monitor multiple cities on their weather dashboard.
 
-## Available Scripts
+## Project Setup
 
-In the project directory, you can run:
+To set up the project locally, follow these steps:
 
-### `npm start`
+1. Clone the repository: `git clone <repository_url>`
+2. Navigate to the project directory: `cd weather-application`
+3. Install dependencies: `npm install` or `yarn install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## OpenWeatherMap API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This application uses the OpenWeatherMap API to retrieve weather data. You will need to obtain an API key from OpenWeatherMap and replace the placeholder in the code with your actual API key.
 
-### `npm test`
+## Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Form Component
 
-### `npm run build`
+The form component enables users to input city names. It manages the input field state and handles weather data fetched from the API.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### WeatherCard Component
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The WeatherCard component displays current temperature, weather conditions, and additional relevant data retrieved from the API for a specific city.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### City Management
 
-### `npm run eject`
+Users can add multiple cities to their weather dashboard for convenient weather tracking. The application supports managing multiple cities.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Error Handling
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Robust error handling is implemented for cases such as invalid city names or failed API requests. Appropriate error messages are displayed to the user.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Responsiveness
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application is designed to be responsive to varying screen sizes and devices for optimal user experience. It ensures a consistent and user-friendly interface across different devices.
 
-## Learn More
+## Technologies Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React
+- TypeScript
+- Redux (or Zustand) for global state management
+- Axios for HTTP requests
+- Tailwind CSS for styling (optional)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Evaluation Criteria
 
-### Code Splitting
+- **Code Quality:** The code is clean, readable, and well-organized.
+- **Error Handling:** Effective error handling and input validation mechanisms are implemented.
+- **Testing:** Comprehensive test coverage is provided across various scenarios.
+- **Documentation:** Clear and thorough documentation is provided for ease of understanding and maintenance.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## How to Run
 
-### Analyzing the Bundle Size
+To run the application locally, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Make sure you have Node.js installed on your machine.
+2. Obtain an API key from OpenWeatherMap.
+3. Replace the placeholder API key in the code with your actual API key.
+4. Run the application: `npm start` or `yarn start`
+5. Open the application in your browser at `http://localhost:3000`
 
-### Making a Progressive Web App
+## Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [Your Name](https://github.com/your_username) - Full Stack Developer
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
