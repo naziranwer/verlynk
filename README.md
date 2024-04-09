@@ -63,7 +63,7 @@ To run the application locally, follow these steps:
 
 ## Contributors
 
-- [Your Name](https://github.com/your_username) - Full Stack Developer
+- [Mohd Nazir Anwer](https://github.com/your_username) - Full Stack Developer
 
 ## License
 
