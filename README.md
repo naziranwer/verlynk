@@ -39,9 +39,9 @@ The application is designed to be responsive to varying screen sizes and devices
 ## Technologies Used
 
 - React
-- Redux (or Zustand) for global state management
+- Redux for global state management
 - Axios for HTTP requests
-- Tailwind CSS for styling (optional)
+- Tailwind CSS for styling
 
 ## Evaluation Criteria
 
