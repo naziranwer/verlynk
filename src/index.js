@@ -4,14 +4,15 @@ import "./index.css";
 import App from "./App";
 import { Provider } from "react-redux";
 import store from "./redux/store/store";
-
+import { Analytics } from "@vercel/analytics/react";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-console.log('store in index',store.weather);
+console.log("store in index", store.weather);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
+      <Analytics />
     </Provider>
   </React.StrictMode>
 );
